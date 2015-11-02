@@ -1,0 +1,115 @@
+
+.container{
+    width: 960px;
+    margin: auto;
+}
+.input input {
+    border-radius: 4px 0px 0px 4px;
+}
+.input input:focus {
+    border-color: gray;
+    box-shadow: 0px 0px 2px rgb(255, 80, 80); inset, 0px 0px 2px #C5C5C5;
+}
+.iconButton {
+    background-color: #C5C5C5;
+    height:25px;
+    width:25px;
+    border-radius: 0px 4px 4px 0px;
+}
+.iconCalendar {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+}
+.prev, .next, .prev_year, .next_year {
+    background-color: #CCC;
+    border-radius: 2px;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+}
+.prev:hover,.next:hover,.prev_year:hover,.next_year:hover,.iconButton:hover {
+    background-color:gray;
+    color: red;
+}
+.calendar_data td:first-child {
+    color: rgb(255, 80, 80);
+}
+.calendar_data td:first-child:hover {
+    color: rgb(255, 255, 255);
+}
+td, th {
+    text-align: center;
+    height: 25px;
+    width: 25px;
+}
+.old_dt, .new_dt{
+    color : #aaa;
+}
+.prev:hover,.next:hover,.prev_year:hover,.next_year:hover,.iconButton:hover {
+    background-color:gray;
+    color: red;
+}
+
+.old_dt:hover, .new_dt:hover {
+    background-color: darkgray;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+}
+.years{
+    padding: 12px 5px;
+}
+.month{
+    padding: 12px;
+}
+.selected_dt{
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.switchCalendar, .switchMonth, .switchYear , .dt:hover , .calendar_data td:first-child:hover {
+    background-color: rgb(255, 80, 80);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+}
+.dropdownMenu{
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+    z-index: 100;
+    
+}
+
+.jQCalendar {
+    border: 1.5px solid gray;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px rgb(42, 28, 28);
+}
+.jQCompleteCalendar {
+    background-color: rgb(238, 238, 238);
+}
+.totalMonths, .totalYear{
+display: none;
+}
+.date_lbl{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.row:after{
+    visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.col{
+    float: left;
+}
+.row{width: 100%}
